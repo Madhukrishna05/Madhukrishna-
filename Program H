@@ -1,0 +1,6 @@
+import random
+def random_multiple_of_4(min_val, max_val):
+    return random.choice([x for x in range(min_val, max_val + 1) if x % 4 == 0])
+matrix = [[random_multiple_of_4(40, 160) for _ in range(5)] for _ in range(4)]
+for row in matrix:
+    print(row)
