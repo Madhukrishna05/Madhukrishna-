@@ -1,0 +1,3 @@
+strings = ["hello", "world", "python", "list", "comprehension"]
+uppercase_strings = [s.upper() for s in strings]
+print(uppercase_strings)
