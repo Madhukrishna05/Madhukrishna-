@@ -1,0 +1,6 @@
+def fibonacci(n):
+    fib_sequence = [0, 1]
+    [fib_sequence.append(fib_sequence[-1] + fib_sequence[-2]) for _ in range(2, n)]
+    return fib_sequence[:n]
+first_20_fibonacci = fibonacci(20)
+print(first_20_fibonacci)
